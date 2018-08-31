@@ -1,0 +1,31 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "just for study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "loohm",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "fs.promised": "^3.0.0",
+    "koa-onerror": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "mocha": "^5.2.0",
+    "nvm": "0.0.4",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "v8": "^0.1.0"
+  },
+  "devDependencies": {
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.1",
+    "koa-session": "^5.8.3",
+    "koa-static": "^5.0.0"
+  }
+}
