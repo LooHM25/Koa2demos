@@ -1,9 +1,17 @@
-const Koa = require('koa');
-const app = new Koa();
-const path = require('path');
-const serve = require('koa-static');
+const Koa = require('koa')
+const path = require('path')
+const static = require('koa-static')
+const app = new Koa()
 
-const main = serve(path.join(__dirname));
+//设置静态资源的路径 
+const staticPath = './public'
 
-app.use(main);
-app.listen(3000);
+app.use(static(path.join( __dirname,  staticPath)));
+
+app.use( async ( ctx ) => {
+  ctx.body = 'hello world'
+})
+
+app.listen(3000, () => {
+  console.log('server is starting at port 3000')
+})
